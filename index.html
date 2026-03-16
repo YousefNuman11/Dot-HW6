@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HW6</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .main{
+            display: flex;
+            background-image: url(./form-image.jpeg);
+            width: 100%;
+            height: 100vh;
+            background-size: center;
+            background-position: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 400px;
+            background-color: rgba(228, 223, 223, 0.5);
+            display: flex;
+            flex-direction: column;
+            padding: 50px 10px;
+            border-radius: 20px;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        h1{
+            text-align: center;
+            margin: 20px;
+
+        }
+        input[type=text], input[type=password]{
+            background-color: rgb(212, 210, 210);
+            border: none;
+            padding: 15px;
+            margin: 5px;
+            border-radius:5px ;
+        }
+
+        input[type=submit]{
+            padding: 15px;
+            border: none;
+            background-color: rgb(1, 90, 63);
+            color: white;
+            margin: 5px;
+            width: calc(100% - 10px);
+        }
+        .foot{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 5px 0;
+        }
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="main">
+
+        <div class="container">
+
+
+            <form class="login-form">
+                <h1>Account Login</h1>
+                <input type="text" placeholder="user name">
+                <input type="password" placeholder="password">
+                <input type="submit" value="LOGIN">
+
+                <div class="foot">
+                    
+                    <div>
+                    <input type="checkbox" id="check">
+                    <label for="check">remember me</label>
+                    </div>
+
+                    <a href="#">Forgot Password?</a>
+
+                </div>
+            </form>
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
+</html>
