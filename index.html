@@ -54,6 +54,7 @@
             color: white;
             margin: 5px;
             width: calc(100% - 10px);
+            cursor: pointer;
         }
         .foot{
             display: flex;
@@ -76,16 +77,16 @@
         <div class="container">
 
 
-            <form class="login-form">
+            <form class="login-form" method="get" action="">
                 <h1>Account Login</h1>
-                <input type="text" placeholder="user name">
-                <input type="password" placeholder="password">
+                <input type="text" name="username" placeholder="user name">
+                <input type="password" name="password" placeholder="password">
                 <input type="submit" value="LOGIN">
 
                 <div class="foot">
                     
                     <div>
-                    <input type="checkbox" id="check">
+                    <input type="checkbox" id="check" name="rememberMe" value="yes">
                     <label for="check">remember me</label>
                     </div>
 
